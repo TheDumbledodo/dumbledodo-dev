@@ -60,9 +60,9 @@
   {{end}}
 </div>
 {{if .All}}
-<button class="btn" hx-get="/reviews" hx-target="#reviews-box" hx-swap="innerHTML">Show fewer</button>
+<p class="more"><button class="btn" hx-get="/reviews" hx-target="#reviews-box" hx-swap="innerHTML">Show fewer</button></p>
 {{else}}
-<button class="btn" hx-get="/reviews?all=1" hx-target="#reviews-box" hx-swap="innerHTML">Show all {{.TotalReviews}} reviews</button>
+<p class="more"><button class="btn" hx-get="/reviews?all=1" hx-target="#reviews-box" hx-swap="innerHTML">Show all {{.TotalReviews}} reviews</button></p>
 {{end}}
 {{end}}
 
