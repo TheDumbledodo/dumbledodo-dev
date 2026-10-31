@@ -1,0 +1,154 @@
+[
+ {
+  "id": "bots",
+  "title": "Bot fleet",
+  "kicker": "Go + Rust · own project",
+  "period": "2026",
+  "text": [
+   "A Rust Minecraft bot that performs actions on servers and farms in-game money, and a Go backend with a Vue panel that manages many of them. Each bot instance runs on its own VPS, with a small Go agent beside it reporting back to the controller."
+  ],
+  "points": [
+   "Rust bot built on the open-source [azalea](https://github.com/azalea-rs/azalea) library",
+   "Go controller and Vue panel (Go + TypeScript)",
+   "Go agent on every VPS"
+  ],
+  "images": [
+   "panel-bots",
+   "panel-detail",
+   "panel-stats",
+   "panel-farms"
+  ],
+  "tags": [
+   "Rust",
+   "Go",
+   "Vue",
+   "TypeScript"
+  ],
+  "link": "",
+  "link_label": ""
+ },
+ {
+  "id": "blueprint",
+  "title": "Blueprint",
+  "kicker": "Open source · 4 stars",
+  "period": "2025 – now",
+  "text": [
+   "A framework to unify Paper, Velocity and other Minecraft projects with a modular design and minimal code. It is the base I now build new plugins on, and it is public on GitHub."
+  ],
+  "points": [
+   "Commands, configuration and modules in one API",
+   "still in active development"
+  ],
+  "images": [],
+  "tags": [
+   "Java",
+   "Framework"
+  ],
+  "link": "https://github.com/TheDumbledodo/blueprint",
+  "link_label": "View on GitHub"
+ },
+ {
+  "id": "dumbleland",
+  "title": "DumbleLand",
+  "kicker": "Server I ran",
+  "period": "Jan 7 – Dec 19, 2025",
+  "text": [
+   "A Minecraft server that I ran and developed with my friend Lecer. We wrote the economy, claims, essentials, Slimefun content and the Discord bot ourselves, and the server had its own website and ruby store."
+  ],
+  "points": [
+   "Custom blocks and machines (Dumble Expansion)",
+   "Discord bot: rules, tickets, claim logs and duplication alerts",
+   "GTA-style roleplay gamemode with roles, levels, shops, mines and a profile HUD"
+  ],
+  "images": [
+   "dumbleland-art",
+   "dl-spawn",
+   "dl-selector",
+   "dl-store"
+  ],
+  "tags": [
+   "Java",
+   "Paper",
+   "Slimefun",
+   "Discord"
+  ],
+  "link": "https://www.youtube.com/@dumbleland",
+  "link_label": "YouTube channel",
+  "logo": "icon-dumbleland.webp"
+ },
+ {
+  "id": "justmc",
+  "title": "JustMC network",
+  "kicker": "Software Developer, JustMC network",
+  "period": "Jun 2024 – Jan 2026",
+  "text": [
+   "Plugin developer for the JustMC prison network. Over about 12 months I wrote or maintained roughly 25 plugins for it."
+  ],
+  "points": [
+   "Jobs and Tools",
+   "Gangs, RankUP, Pets, Robots, Cells, BlackMarket and more",
+   "Minigames platform with its API, and Duels",
+   "2FA, queue and chat games"
+  ],
+  "images": [
+   "justmc-logo",
+   "justmc-miner",
+   "justmc-profile",
+   "justmc-listing"
+  ],
+  "tags": [
+   "Java",
+   "Paper"
+  ],
+  "link": "",
+  "link_label": ""
+ },
+ {
+  "id": "events",
+  "title": "Youtuber Events",
+  "kicker": "Hosted and built",
+  "period": "2023 – 2025",
+  "text": [
+   "I host server events and build the plugins behind them. IslandsWar ran for multiple seasons for the YouTuber [Doormendez](https://www.youtube.com/channel/UCQ03_xKtV23EBU8ZB8T6YrQ), on an event plugin, with up to 200 players online at once. I also hosted the [SirMrNaruto](https://www.youtube.com/@NarutoSenpai) event and PastoSMP."
+  ],
+  "points": [
+   "IslandsWar: multiple seasons hosted for Doormendez",
+   "SirMrNaruto event and PastoSMP",
+   "Up to 200 players concurrently"
+  ],
+  "images": [],
+  "tags": [
+   "Java"
+  ],
+  "link": "",
+  "link_label": ""
+ },
+ {
+  "id": "minefront",
+  "title": "Minefront",
+  "kicker": "Plugins for a skyblock server",
+  "period": "May – Jul 2025",
+  "text": [
+   "Two plugins for a skyblock server built on SuperiorSkyblock2: a masteries system where players level ore, crop, mob and farming tiers for perks, and island collectors with a value cauldron and a transaction history."
+  ],
+  "points": [
+   "Masteries with tiers, perks, XP sources and achievement rewards",
+   "Island collector, value cauldron and transaction history",
+   "Paper 1.20.4, hooked into SuperiorSkyblock2 and the shop and stacker plugins"
+  ],
+  "images": [
+   "minefront-logo",
+   "mast-ore",
+   "island-collector",
+   "island-cauldron"
+  ],
+  "tags": [
+   "Java",
+   "Paper",
+   "SuperiorSkyblock2"
+  ],
+  "link": "",
+  "link_label": "",
+  "logo": "icon-minefront.webp"
+ }
+]

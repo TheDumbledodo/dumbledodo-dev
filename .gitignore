@@ -1,0 +1,27 @@
+# Build output
+/site
+/site.exe
+*.exe
+*.test
+*.out
+/bin/
+/dist/
+
+# Go tooling
+coverage.txt
+*.prof
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editors and OS
+.idea/
+.vscode/
+*.iml
+*.swp
+.DS_Store
+Thumbs.db

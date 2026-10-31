@@ -1,0 +1,407 @@
+{
+ "gallery": [
+  {
+   "slug": "dumbleland-art",
+   "caption": "DumbleLand artwork",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-spawn",
+   "caption": "DumbleLand spawn: warps menu, NPCs and sidebar scoreboard",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-selector",
+   "caption": "Server selector: Amazon SMP and DumbleLand",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-machines",
+   "caption": "Slimefun-style machines and custom blocks in the wilderness",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-expansion-gui",
+   "caption": "Dumble Expansion: custom blocks menu",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-recipe",
+   "caption": "Custom crafting recipe",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-mob",
+   "caption": "Custom Nether armour set",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "dl-sidebar",
+   "caption": "Sidebar: rank, balance, rubies, location, playtime",
+   "group": "DumbleLand",
+   "date": ""
+  },
+  {
+   "slug": "rp-profile",
+   "caption": "Profile card: rank, balance, rubies, role, gang and level",
+   "group": "Roleplay city",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "rp-levelup",
+   "caption": "Level-up titles and chat feed",
+   "group": "Roleplay city",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "rp-crates",
+   "caption": "Crates street",
+   "group": "Roleplay city",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "rp-hospital",
+   "caption": "Hospital interior",
+   "group": "Roleplay city",
+   "date": "Aug 2025"
+  },
+  {
+   "slug": "rp-diamond-mine",
+   "caption": "Diamond mine zone with a level requirement",
+   "group": "Roleplay city",
+   "date": "Sep 2025"
+  },
+  {
+   "slug": "rp-emerald-mine",
+   "caption": "Emerald mine zone",
+   "group": "Roleplay city",
+   "date": "Sep 2025"
+  },
+  {
+   "slug": "rp-fishing",
+   "caption": "Fishing shop and fisherman NPC",
+   "group": "Roleplay city",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-weapons",
+   "caption": "Weapon shop displays",
+   "group": "Roleplay city",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-hitman",
+   "caption": "Hitman role NPC",
+   "group": "Roleplay city",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-afk",
+   "caption": "AFK shop",
+   "group": "Roleplay city",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-boxes",
+   "caption": "Pet boxes generating money",
+   "group": "Roleplay city",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-vending",
+   "caption": "Vending machine NPC",
+   "group": "Roleplay city",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-armory",
+   "caption": "Armory",
+   "group": "Roleplay city",
+   "date": "Jun 2025"
+  },
+  {
+   "slug": "rp-restaurant",
+   "caption": "Restaurant interior",
+   "group": "Roleplay city",
+   "date": "Jun 2025"
+  },
+  {
+   "slug": "rp-gun-hud",
+   "caption": "Gun ammo counter",
+   "group": "Roleplay city",
+   "date": "Jun 2025"
+  },
+  {
+   "slug": "rp-teleporter",
+   "caption": "Teleporter in the city",
+   "group": "Roleplay city",
+   "date": "Jun 2025"
+  },
+  {
+   "slug": "rp-ammo",
+   "caption": "Ammo display case with prices",
+   "group": "Roleplay city",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "rp-roles",
+   "caption": "Role selection menu",
+   "group": "Gameplay GUIs",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-tokens",
+   "caption": "Tokens shop menu",
+   "group": "Gameplay GUIs",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-parrotbox",
+   "caption": "Pet box purchase: money every five minutes",
+   "group": "Gameplay GUIs",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "rp-warps",
+   "caption": "Warps menu with level requirements",
+   "group": "Gameplay GUIs",
+   "date": "Oct 2025"
+  },
+  {
+   "slug": "minefront-logo",
+   "caption": "Minefront network artwork",
+   "group": "Gameplay GUIs",
+   "date": ""
+  },
+  {
+   "slug": "mast-island",
+   "caption": "Island masteries menu",
+   "group": "Gameplay GUIs",
+   "date": "May 2025"
+  },
+  {
+   "slug": "mast-ore",
+   "caption": "Ore mastery: progress, tiers and perks",
+   "group": "Gameplay GUIs",
+   "date": "May 2025"
+  },
+  {
+   "slug": "mast-crop",
+   "caption": "Crop mastery: progress, tiers and perks",
+   "group": "Gameplay GUIs",
+   "date": "May 2025"
+  },
+  {
+   "slug": "mast-mob",
+   "caption": "Mob mastery: locked entries",
+   "group": "Gameplay GUIs",
+   "date": "May 2025"
+  },
+  {
+   "slug": "xp-combat",
+   "caption": "Combat XP sources",
+   "group": "Gameplay GUIs",
+   "date": "Jun 2025"
+  },
+  {
+   "slug": "xp-dungeon",
+   "caption": "Dungeoneer XP sources",
+   "group": "Gameplay GUIs",
+   "date": "Jun 2025"
+  },
+  {
+   "slug": "island-cauldron",
+   "caption": "Island value cauldron",
+   "group": "Gameplay GUIs",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "island-history",
+   "caption": "Island value transaction history",
+   "group": "Gameplay GUIs",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "island-collector",
+   "caption": "Island collector",
+   "group": "Gameplay GUIs",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "achievements",
+   "caption": "Achievement rewards menu",
+   "group": "Roleplay city",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "rank-perks",
+   "caption": "Rank perks list",
+   "group": "Gameplay GUIs",
+   "date": "Sep 2025"
+  },
+  {
+   "slug": "dl-website",
+   "caption": "DumbleLand website: home",
+   "group": "Website and store",
+   "date": ""
+  },
+  {
+   "slug": "dl-store",
+   "caption": "DumbleLand website: ranks and rubies store",
+   "group": "Website and store",
+   "date": ""
+  },
+  {
+   "slug": "dl-login",
+   "caption": "DumbleLand website: login",
+   "group": "Website and store",
+   "date": ""
+  },
+  {
+   "slug": "web-404",
+   "caption": "Website 404 page",
+   "group": "Website and store",
+   "date": "Jul 2025"
+  },
+  {
+   "slug": "web-store-rubies",
+   "caption": "Store: ruby packs",
+   "group": "Website and store",
+   "date": "Aug 2025"
+  },
+  {
+   "slug": "dl-discord-rules",
+   "caption": "Discord bot: rules message",
+   "group": "Discord bots",
+   "date": ""
+  },
+  {
+   "slug": "dl-discord-tickets",
+   "caption": "Discord bot: ticket system",
+   "group": "Discord bots",
+   "date": ""
+  },
+  {
+   "slug": "dl-claim-log",
+   "caption": "Discord claim log: items, location and claim owner",
+   "group": "Discord bots",
+   "date": ""
+  },
+  {
+   "slug": "bot-duper",
+   "caption": "Discord bot alerts for possible duplication exploits",
+   "group": "Discord bots",
+   "date": "Sep 2025"
+  },
+  {
+   "slug": "justmc-logo",
+   "caption": "JustMC network artwork",
+   "group": "JustMC",
+   "date": ""
+  },
+  {
+   "slug": "justmc-miner",
+   "caption": "JustMC: miner tool with token enchantments",
+   "group": "JustMC",
+   "date": "Dec 2025"
+  },
+  {
+   "slug": "justmc-profile",
+   "caption": "JustMC: lobby profile board",
+   "group": "JustMC",
+   "date": "Jan 2026"
+  },
+  {
+   "slug": "justmc-listing",
+   "caption": "JustMC: feature list",
+   "group": "JustMC",
+   "date": "Dec 2025"
+  },
+  {
+   "slug": "panel-bots",
+   "caption": "Bot panel: every bot with status, proxy, ping, balance and sales (names and IPs randomized)",
+   "group": "Bot panel",
+   "date": "Oct 2026"
+  },
+  {
+   "slug": "panel-detail",
+   "caption": "Bot panel: one bot with hourly sales, stats, position and commands (sample data, location randomized)",
+   "group": "Bot panel",
+   "date": "Oct 2026"
+  },
+  {
+   "slug": "panel-stats",
+   "caption": "Bot panel: player stats lookup with a skin viewer (name and UUID randomized)",
+   "group": "Bot panel",
+   "date": "Oct 2026"
+  },
+  {
+   "slug": "panel-farms",
+   "caption": "Bot panel: farm locations by region on a coordinate map (positions randomized)",
+   "group": "Bot panel",
+   "date": "Oct 2026"
+  },
+  {
+   "slug": "dl-glassbridge",
+   "caption": "Glass bridge event arena",
+   "group": "Events",
+   "date": ""
+  },
+  {
+   "slug": "backpack-tree",
+   "caption": "BackPack plugin: project structure",
+   "group": "Code and tools",
+   "date": ""
+  },
+  {
+   "slug": "backpack-ingame",
+   "caption": "BackPack plugin: equipping a backpack",
+   "group": "Code and tools",
+   "date": ""
+  },
+  {
+   "slug": "backpack-closeup",
+   "caption": "BackPack plugin: backpack on the player's back",
+   "group": "Code and tools",
+   "date": ""
+  },
+  {
+   "slug": "infria-blackmarket",
+   "caption": "Infria BlackMarket plugin: structure and config",
+   "group": "Code and tools",
+   "date": ""
+  }
+ ],
+ "events": [
+  {
+   "name": "IslandsWar",
+   "videos": [
+    "4-ba9VN-KIg",
+    "tENBTyUTOyk",
+    "mF7wZiAXpm8",
+    "KQN0PNEBmco",
+    "TL5eoSsbeYU"
+   ]
+  },
+  {
+   "name": "Naruto Event",
+   "videos": [
+    "w36Eccl_5-Q"
+   ]
+  },
+  {
+   "name": "PastoSMP",
+   "videos": [
+    "gBT6wK082-Y",
+    "-xuXjJibDTM"
+   ]
+  }
+ ]
+}

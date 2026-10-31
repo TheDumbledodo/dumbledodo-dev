@@ -1,0 +1,1189 @@
+{
+ "groups": [
+  {
+   "id": "justmc",
+   "title": "JustMC network",
+   "period": "Jun 2024 – Jan 2026"
+  },
+  {
+   "id": "elysian",
+   "title": "Elysian and Prisons",
+   "period": "2024"
+  },
+  {
+   "id": "dumbleland",
+   "title": "DumbleLand",
+   "period": "Jan 7 – Dec 19, 2025"
+  },
+  {
+   "id": "paradise",
+   "title": "Paradise City",
+   "period": "2021 – 2023"
+  },
+  {
+   "id": "events",
+   "title": "Events",
+   "period": "2023 – 2025"
+  },
+  {
+   "id": "minefront",
+   "title": "Minefront",
+   "period": "May – Jul 2025"
+  },
+  {
+   "id": "convicted",
+   "title": "ConvictedGG",
+   "period": "Jun 2025 – Jun 2026"
+  },
+  {
+   "id": "clients",
+   "title": "Client work",
+   "period": "2023 – 2026"
+  },
+  {
+   "id": "infria",
+   "title": "Infria",
+   "period": "2024"
+  },
+  {
+   "id": "gorust",
+   "title": "Go and Rust",
+   "period": "2026"
+  },
+  {
+   "id": "own",
+   "title": "Own libraries and plugins",
+   "period": "2023 – 2026"
+  }
+ ],
+ "items": [
+  {
+   "n": "JustMC network",
+   "g": "justmc",
+   "d": "The JustMC prison network, where I worked as a Software Developer.",
+   "i": [
+    "justmc-logo",
+    "justmc-profile",
+    "justmc-listing"
+   ],
+   "k": "",
+   "pin": true
+  },
+  {
+   "n": "Jobs",
+   "g": "justmc",
+   "d": "The base plugin of the JustMC prison gamemode. Handles job progression.",
+   "c": 179,
+   "t": 209,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Tools",
+   "g": "justmc",
+   "d": "Custom tools with token-powered enchantments: a Token Bag, proc chance and an enchant limit that players upgrade from a menu.",
+   "c": 105,
+   "t": 106,
+   "i": [
+    "justmc-miner"
+   ],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Minigames",
+   "g": "own",
+   "d": "Hosts minigame instances in preloaded arena worlds, with a hub plugin for the lobby side.",
+   "c": 35,
+   "t": 35,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Gangs",
+   "g": "justmc",
+   "d": "Gangs for the prison gamemode.",
+   "c": 22,
+   "t": 33,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Duels",
+   "g": "own",
+   "d": "A duels minigame built on my Minigames API.",
+   "c": 17,
+   "t": 17,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Minigames API",
+   "g": "own",
+   "d": "The shared API the minigame plugins build on.",
+   "c": 14,
+   "t": 14,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "RankUP",
+   "g": "justmc",
+   "d": "Rank progression for the prison gamemode.",
+   "c": 12,
+   "t": 13,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Pets",
+   "g": "justmc",
+   "d": "Pets that plug into the RankUP and Tools plugins.",
+   "c": 10,
+   "t": 10,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Robots",
+   "g": "justmc",
+   "d": "Robots that work together with the Cells plugin.",
+   "c": 8,
+   "t": 66,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Cells",
+   "g": "justmc",
+   "d": "Prison cells.",
+   "c": 6,
+   "t": 6,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "BlackMarket",
+   "g": "justmc",
+   "d": "A black market for the prison gamemode.",
+   "c": 6,
+   "t": 6,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "MagicDust",
+   "g": "justmc",
+   "d": "Magic dust upgrade items.",
+   "c": 6,
+   "t": 6,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Sets",
+   "g": "justmc",
+   "d": "Armour sets.",
+   "c": 6,
+   "t": 6,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Pouches",
+   "g": "justmc",
+   "d": "Item pouches.",
+   "c": 6,
+   "t": 6,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "AntiAFK",
+   "g": "justmc",
+   "d": "Anti-AFK checks.",
+   "c": 6,
+   "t": 6,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Bloodbath",
+   "g": "justmc",
+   "d": "Bloodbath event.",
+   "c": 5,
+   "t": 5,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Titles",
+   "g": "justmc",
+   "d": "Player titles exposed through PlaceholderAPI.",
+   "c": 3,
+   "t": 3,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Boxes",
+   "g": "justmc",
+   "d": "Loot boxes.",
+   "c": 3,
+   "t": 3,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "ChatColor",
+   "g": "justmc",
+   "d": "Chat colour selection.",
+   "c": 3,
+   "t": 3,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "2FA",
+   "g": "justmc",
+   "d": "Adds a second step to logging in, with /2fa and /login. Runs on both Paper and Velocity.",
+   "c": 1,
+   "t": 1,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Queue",
+   "g": "justmc",
+   "d": "Server queue.",
+   "c": 1,
+   "t": 1,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "SimpleChatGames",
+   "g": "justmc",
+   "d": "Chat games started with /chatgames.",
+   "c": 1,
+   "t": 1,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Squid Game event",
+   "g": "events",
+   "d": "Squid Game event with game and admin commands, a PvP toggle, player collision and a skin changer. Includes the glass-bridge arena. Fixed and improved overnight.",
+   "c": 35,
+   "t": 43,
+   "i": [
+    "dl-glassbridge"
+   ],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Capture",
+   "g": "elysian",
+   "d": "Capture points for the PvP server.",
+   "c": 26,
+   "t": 41,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Elysian Staff",
+   "g": "elysian",
+   "d": "Staff tools. Most other Elysian plugins depend on it.",
+   "c": 19,
+   "t": 73,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Prisons Guards",
+   "g": "elysian",
+   "d": "Prison guards you spawn with /spawnGuard, drawn with PacketEvents.",
+   "c": 15,
+   "t": 15,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Monuments",
+   "g": "elysian",
+   "d": "Monuments, with /monument and a stored-region command.",
+   "c": 12,
+   "t": 14,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Collectors",
+   "g": "elysian",
+   "d": "Collectors with hologram displays and Vault payouts.",
+   "c": 10,
+   "t": 22,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Outposts",
+   "g": "elysian",
+   "d": "Outposts built on the Mothership core.",
+   "c": 10,
+   "t": 29,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Essence",
+   "g": "elysian",
+   "d": "Essence plugin.",
+   "c": 5,
+   "t": 14,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Vaults",
+   "g": "elysian",
+   "d": "Vaults.",
+   "c": 5,
+   "t": 29,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Armor Sets",
+   "g": "elysian",
+   "d": "Armour sets.",
+   "c": 4,
+   "t": 19,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Prisons Crafting",
+   "g": "elysian",
+   "d": "Crafting for the prisons server.",
+   "c": 4,
+   "t": 38,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Kits",
+   "g": "elysian",
+   "d": "Kits.",
+   "c": 3,
+   "t": 15,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Locked Box",
+   "g": "elysian",
+   "d": "Locked boxes with hologram displays.",
+   "c": 3,
+   "t": 8,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Utils",
+   "g": "elysian",
+   "d": "Shared utilities for the other Elysian plugins.",
+   "c": 3,
+   "t": 10,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Elysian Shop",
+   "g": "elysian",
+   "d": "Shop.",
+   "c": 2,
+   "t": 11,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Sets and Skins",
+   "g": "elysian",
+   "d": "Armour sets and item skins, with /armorsets and /itemskins.",
+   "c": 2,
+   "t": 15,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Prisons Enchants",
+   "g": "elysian",
+   "d": "Custom enchants for the prisons server.",
+   "c": 2,
+   "t": 2,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Prisons Users",
+   "g": "elysian",
+   "d": "Player data for the prisons plugins.",
+   "c": 1,
+   "t": 21,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Prisons Pets",
+   "g": "elysian",
+   "d": "Pets drawn with custom models. The last delivery for this server.",
+   "c": 1,
+   "t": 1,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "DumbleLand",
+   "g": "dumbleland",
+   "d": "The DumbleLand server I ran and developed with Lecer.",
+   "i": [
+    "dumbleland-art"
+   ],
+   "k": "",
+   "pin": true
+  },
+  {
+   "n": "Lobby",
+   "g": "dumbleland",
+   "d": "The DumbleLand lobby with the server selector.",
+   "i": [
+    "dl-selector"
+   ],
+   "k": "",
+   "pin": true
+  },
+  {
+   "n": "Dumble Expansion",
+   "g": "dumbleland",
+   "d": "A custom-made Slimefun addon for DumbleLand: custom blocks, machines, items and recipes.",
+   "c": 143,
+   "t": 799,
+   "i": [
+    "dl-expansion-gui",
+    "dl-machines",
+    "dl-recipe",
+    "dl-mob"
+   ],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Dumble Claim",
+   "g": "dumbleland",
+   "d": "Land claims with Slimefun and Vault hooks and packet-based visuals.",
+   "c": 79,
+   "t": 232,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Dumble Essentials",
+   "g": "dumbleland",
+   "d": "Core commands for the server. Also reports possible duplication to the Discord bot and logs claim contents.",
+   "c": 34,
+   "t": 236,
+   "i": [
+    "bot-duper",
+    "dl-claim-log"
+   ],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Dumble RolePlay",
+   "g": "dumbleland",
+   "d": "The GTA-style roleplay gamemode: roles such as police and hitman, levels, mines, shops, weapons and ammo, vending machines and a profile HUD.",
+   "c": 24,
+   "t": 456,
+   "i": [
+    "rp-profile",
+    "rp-levelup",
+    "rp-crates",
+    "rp-hospital",
+    "rp-diamond-mine",
+    "rp-emerald-mine",
+    "rp-fishing",
+    "rp-weapons",
+    "rp-hitman",
+    "rp-roles",
+    "rp-afk",
+    "rp-tokens",
+    "rp-parrotbox",
+    "rp-boxes",
+    "rp-warps",
+    "rp-vending",
+    "rp-armory",
+    "rp-restaurant",
+    "rp-gun-hud",
+    "rp-teleporter",
+    "rp-ammo",
+    "achievements"
+   ],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Dumble Slimefun",
+   "g": "dumbleland",
+   "d": "Our fork of Slimefun, adapted for DumbleLand.",
+   "c": 14,
+   "t": 48,
+   "i": [],
+   "featured": false,
+   "k": "fork"
+  },
+  {
+   "n": "Dumble Network",
+   "g": "dumbleland",
+   "d": "The Paper side of the proxy bridge, with vanish support.",
+   "c": 9,
+   "t": 321,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Networks",
+   "g": "dumbleland",
+   "d": "A fork of the Networks Slimefun addon, adapted for DumbleLand.",
+   "c": 6,
+   "t": 24,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Claim Fly",
+   "g": "dumbleland",
+   "d": "Flight inside your own claim.",
+   "c": 5,
+   "t": 5,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Discord",
+   "g": "dumbleland",
+   "d": "The Discord bot: rules, tickets, claim logs and duplication alerts.",
+   "c": 5,
+   "t": 52,
+   "i": [
+    "dl-discord-rules",
+    "dl-discord-tickets"
+   ],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Dumble Currency",
+   "g": "dumbleland",
+   "d": "Server economy and the rank perks menus.",
+   "c": 4,
+   "t": 65,
+   "i": [
+    "rank-perks"
+   ],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Enchantments",
+   "g": "dumbleland",
+   "d": "Custom enchantments.",
+   "c": 4,
+   "t": 78,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Chest Shop",
+   "g": "dumbleland",
+   "d": "Chest shops tied into claims and the economy.",
+   "c": 2,
+   "t": 17,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Hologram",
+   "g": "dumbleland",
+   "d": "Packet-based holograms.",
+   "c": 2,
+   "t": 2,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumble Apartments",
+   "g": "dumbleland",
+   "d": "Apartments.",
+   "c": 2,
+   "t": 68,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Paradise Core",
+   "g": "paradise",
+   "d": "Core plugins for the survival server.",
+   "c": 218,
+   "t": 477,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Paradise Expansion",
+   "g": "paradise",
+   "d": "A custom-made Slimefun addon for the server.",
+   "c": 108,
+   "t": 550,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Paradise Event",
+   "g": "paradise",
+   "d": "Event plugin with broadcast, countdown, day and deaths commands.",
+   "c": 55,
+   "t": 97,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Paradise Claim",
+   "g": "paradise",
+   "d": "Land claims with hologram previews and Geyser support.",
+   "c": 51,
+   "t": 73,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Paradise Music",
+   "g": "paradise",
+   "d": "A Discord music bot that plays from YouTube and SoundCloud.",
+   "c": 3,
+   "t": 13,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Paradise Discord",
+   "g": "paradise",
+   "d": "Discord integration.",
+   "c": 2,
+   "t": 23,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Paradise Website",
+   "g": "paradise",
+   "d": "Server website, in Java and JavaScript.",
+   "c": 3,
+   "t": 8,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Dumbol Doormendez",
+   "g": "events",
+   "d": "The Doormendez event plugin: menus, holograms and WorldGuard regions.",
+   "c": 30,
+   "t": 163,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Dumbol Event",
+   "g": "events",
+   "d": "The plugin behind the IslandsWar event: game, day and deaths commands, broadcast channels and proximity voice chat.",
+   "c": 34,
+   "t": 38,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Pasto SMP Event",
+   "g": "events",
+   "d": "Event plugin for PastoSMP.",
+   "c": 31,
+   "t": 31,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Donofa Events",
+   "g": "events",
+   "d": "Events plugin.",
+   "c": 5,
+   "t": 5,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Blueprint",
+   "g": "own",
+   "d": "Framework to unify Paper, Velocity and other projects with a modular design and minimal code. Public on GitHub.",
+   "c": 39,
+   "t": 40,
+   "featured": true,
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "BackPack",
+   "g": "clients",
+   "d": "Wearable backpacks stored by NBT id, with a database repository layer, armour-stand rendering and a container GUI.",
+   "featured": false,
+   "i": [
+    "backpack-ingame",
+    "backpack-closeup",
+    "backpack-tree"
+   ],
+   "k": ""
+  },
+  {
+   "n": "DumbleLand Website",
+   "g": "dumbleland",
+   "d": "The DumbleLand website and store, written in Next.js and TypeScript.",
+   "i": [
+    "dl-website",
+    "dl-login",
+    "web-404",
+    "dl-store",
+    "web-store-rubies"
+   ],
+   "k": "",
+   "pin": true
+  },
+  {
+   "n": "Chronos Core",
+   "g": "clients",
+   "d": "Spawners core.",
+   "c": 42,
+   "t": 42,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "AgriDeco",
+   "g": "clients",
+   "d": "Farming and decoration plugin.",
+   "c": 35,
+   "t": 35,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "Cast Charm",
+   "g": "clients",
+   "d": "Charms, with /charm and /castcharm.",
+   "c": 12,
+   "t": 12,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Server events plugin",
+   "g": "clients",
+   "d": "Events plugin for a private client.",
+   "c": 24,
+   "t": 76,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "cDiscord",
+   "g": "clients",
+   "d": "Minecraft-to-Discord sync plugin.",
+   "c": 24,
+   "t": 234,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Cast Gen Booster",
+   "g": "clients",
+   "d": "Generator and island boosters.",
+   "c": 4,
+   "t": 23,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Cast Mobs",
+   "g": "clients",
+   "d": "Custom mobs, with /castentity.",
+   "c": 3,
+   "t": 3,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Oxygen",
+   "g": "convicted",
+   "d": "Oxygen plugin.",
+   "c": 4,
+   "t": 4,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Cintro Farming",
+   "g": "convicted",
+   "d": "Custom crop management.",
+   "c": 2,
+   "t": 7,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "Recipe Book",
+   "g": "convicted",
+   "d": "Recipe book, with /recipebook.",
+   "c": 2,
+   "t": 2,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "donut-trader",
+   "g": "gorust",
+   "d": "Rust Minecraft bot that farms money and acts on servers. Built on the open-source azalea library.",
+   "c": 188,
+   "t": 193,
+   "featured": true,
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "donut-controller",
+   "g": "gorust",
+   "d": "Go backend and Vue panel that manage the bots, which run on separate VPSs.",
+   "c": 23,
+   "t": 60,
+   "featured": true,
+   "i": [
+    "panel-bots",
+    "panel-detail",
+    "panel-stats",
+    "panel-farms"
+   ],
+   "k": ""
+  },
+  {
+   "n": "donut-agent",
+   "g": "gorust",
+   "d": "Go agent that runs next to the bots on each VPS.",
+   "c": 3,
+   "t": 3,
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "donut-shop",
+   "g": "gorust",
+   "d": "Rust tool.",
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "donut-stats",
+   "g": "gorust",
+   "d": "Rust stats tool.",
+   "i": [],
+   "featured": false,
+   "k": ""
+  },
+  {
+   "n": "MFMasteries",
+   "g": "minefront",
+   "d": "Masteries for a skyblock server: ore, crop, mob and farming masteries with tiers and perks, plus combat and dungeon XP sources and achievement rewards.",
+   "c": 47,
+   "t": 54,
+   "i": [
+    "mast-island",
+    "mast-ore",
+    "mast-crop",
+    "mast-mob",
+    "xp-combat",
+    "xp-dungeon"
+   ],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "MFCollectors",
+   "g": "minefront",
+   "d": "Island collectors for a skyblock server: a collector, an island value cauldron and a transaction history, with hologram displays.",
+   "c": 7,
+   "t": 7,
+   "i": [
+    "island-collector",
+    "island-cauldron",
+    "island-history"
+   ],
+   "k": ""
+  },
+  {
+   "n": "ConvictedCore",
+   "g": "convicted",
+   "d": "The shared core the other Convicted plugins depend on.",
+   "c": 13,
+   "t": 13,
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "ConvictedGangs",
+   "g": "convicted",
+   "d": "Gangs, with state synced through Redis. Depends on ConvictedCore.",
+   "c": 32,
+   "t": 32,
+   "i": [],
+   "featured": true,
+   "k": ""
+  },
+  {
+   "n": "ConvictedArmory",
+   "g": "convicted",
+   "d": "Armory plugin, hooked into AuraSkills and HMCWraps.",
+   "c": 3,
+   "t": 3,
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "ConvictedEnvironments",
+   "g": "convicted",
+   "d": "Environments built with ModelEngine models and FancyHolograms.",
+   "c": 4,
+   "t": 4,
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Core",
+   "g": "infria",
+   "d": "The core plugin for the network, hooked into Vault and Essentials.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Auction House",
+   "g": "infria",
+   "d": "Auction house where players list and buy items.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Auto Miner",
+   "g": "infria",
+   "d": "Auto miner, with PlaceholderAPI placeholders.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Battle Pass",
+   "g": "infria",
+   "d": "Battle pass with tiers and rewards.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "BlackMarket",
+   "g": "infria",
+   "d": "Black market NPC with timed stock, a hologram and one purchase per IP.",
+   "i": [
+    "infria-blackmarket"
+   ],
+   "k": ""
+  },
+  {
+   "n": "Boosters",
+   "g": "infria",
+   "d": "Boosters that plug into ShopGUIPlus.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Bosses",
+   "g": "infria",
+   "d": "Custom bosses.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Bounty",
+   "g": "infria",
+   "d": "Player bounties, paid out through Vault.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Cells",
+   "g": "infria",
+   "d": "Prison cells, with SuperiorSkyblock2 and zMenu menus.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Coin Flip",
+   "g": "infria",
+   "d": "Coin flip betting between players.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Crates",
+   "g": "infria",
+   "d": "Crates with hologram displays.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Duels",
+   "g": "infria",
+   "d": "Duels with WorldGuard arenas.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Envoy",
+   "g": "infria",
+   "d": "Envoy drops.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Events",
+   "g": "infria",
+   "d": "Server events.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Gangs",
+   "g": "infria",
+   "d": "Gangs, built on top of Cells.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "KoTH",
+   "g": "infria",
+   "d": "King of the Hill events.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Lucky Blocks",
+   "g": "infria",
+   "d": "Lucky blocks.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Shards",
+   "g": "infria",
+   "d": "Shards, with a /shard command.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Tags",
+   "g": "infria",
+   "d": "Player tags, with PlaceholderAPI support.",
+   "i": [],
+   "k": ""
+  },
+  {
+   "n": "Tournaments",
+   "g": "infria",
+   "d": "Tournaments.",
+   "i": [],
+   "k": ""
+  }
+ ]
+}

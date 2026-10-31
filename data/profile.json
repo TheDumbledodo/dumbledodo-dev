@@ -1,0 +1,67 @@
+{
+ "name": "Sepehr Sanei",
+ "handle": "Dumbledodo",
+ "tagline": "Backend developer. Five years of Java, now Go and Rust.",
+ "open_to": "Open to remote work worldwide.",
+ "email": "sepehrsanei100@gmail.com",
+ "links": [
+  {
+   "label": "GitHub",
+   "url": "https://github.com/TheDumbledodo"
+  },
+  {
+   "label": "LinkedIn",
+   "url": "https://www.linkedin.com/in/sepehr-sanei/"
+  },
+  {
+   "label": "BuiltByBit",
+   "url": "https://builtbybit.com/feedback/252709"
+  }
+ ],
+ "discord": "The_Dumbledodo",
+ "skills": [
+  {
+   "group": "Languages",
+   "items": [
+    "Java",
+    "Go",
+    "Rust",
+    "TypeScript"
+   ]
+  },
+  {
+   "group": "Backend",
+   "items": [
+    "Spring Boot",
+    "Spring Security",
+    "Spring Data / JPA",
+    "Hibernate",
+    "REST APIs"
+   ]
+  },
+  {
+   "group": "Frontend",
+   "items": [
+    "Vue",
+    "Next.js"
+   ]
+  },
+  {
+   "group": "Data",
+   "items": [
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB"
+   ]
+  },
+  {
+   "group": "Tools",
+   "items": [
+    "Gradle",
+    "Maven",
+    "Git",
+    "Linux"
+   ]
+  }
+ ]
+}

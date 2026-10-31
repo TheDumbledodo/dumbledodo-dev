@@ -1,0 +1,170 @@
+{{define "index"}}<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dumbledodo</title>
+<meta name="description" content="{{.Profile.Tagline}}">
+<meta property="og:title" content="Dumbledodo">
+<meta property="og:description" content="{{.Profile.Tagline}}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="htmx-config" content='{"includeIndicatorStyles":false,"allowEval":false}'>
+<link rel="icon" href="/static/favicon.png?v={{ver}}" type="image/png" sizes="64x64">
+<link rel="icon" href="/static/favicon.ico?v={{ver}}" sizes="any">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png?v={{ver}}">
+<link rel="preload" href="/static/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/site.css?v={{ver}}">
+<script src="/static/vendor/htmx.min.js" defer></script>
+<script src="/static/site.js?v={{ver}}" defer></script>
+</head>
+<body>
+<header class="bar wrap">
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#github">GitHub</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
+  <a class="btn primary" href="#contact">Contact</a>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+  <h1><span class="devil big" aria-hidden="true"><img src="/static/img/devil-5.webp" alt="" width="1024" height="1024"></span><span>Sepehr<svg class="ul" viewBox="0 0 400 44" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 8 Q 200 50 398 4 Q 200 19 2 8 Z"/></svg></span></h1>
+  <div class="hero-side">
+    <p class="lede">{{.Profile.Tagline}}</p>
+    <p class="who">{{.Profile.Name}}, aka {{.Profile.Handle}}. {{.Profile.OpenTo}}</p>
+    <ul class="soc">
+      <li><a href="{{(index .Profile.Links 0).URL}}" rel="me noopener" target="_blank" aria-label="GitHub">{{icon "github"}}</a></li>
+      <li><a href="{{(index .Profile.Links 1).URL}}" rel="me noopener" target="_blank" aria-label="LinkedIn">{{icon "linkedin"}}</a></li>
+      <li><a href="mailto:{{.Profile.Email}}" aria-label="Email">{{icon "mail"}}</a></li>
+      <li><span class="tip" tabindex="0" aria-label="Discord: {{.Profile.Discord}}">{{icon "discord"}}<em>{{.Profile.Discord}}</em></span></li>
+    </ul>
+  </div>
+</section>
+
+
+
+<section class="bento wrap" aria-label="At a glance">
+  <div class="tile t-big"><b data-count>100+</b><span>plugins shipped</span></div>
+  <div class="tile"><b data-count>{{.Reviews.TotalReviews}}</b><span>client reviews</span></div>
+  <div class="tile"><b data-count>5</b><span>years of experience</span></div>
+</section>
+
+<section id="work" class="wrap sec">
+  <header class="sec-h"><h2>Selected work</h2><p>My work in order, newest first. Click any screenshot to enlarge it.</p></header>
+  {{range $i, $c := .Showcase}}
+  <article class="case{{if eq (mod $i 2) 1}} flip{{end}}" id="case-{{$c.ID}}">
+    <div class="case-text">
+      <p class="meta">{{if $c.Period}}<b class="when">{{$c.Period}}</b> {{end}}<span>{{$c.Kicker}}</span></p>
+      <h3>{{if $c.Logo}}<img class="ico" src="/static/img/{{$c.Logo}}" alt="" width="48" height="48">{{end}}{{$c.Title}}</h3>
+      {{range $c.Text}}<p>{{rich .}}</p>{{end}}
+      <ul class="points">{{range $c.Points}}<li>{{rich .}}</li>{{end}}</ul>
+      <p class="stackline">{{range $i, $tg := $c.Tags}}{{if $i}} · {{end}}{{$tg}}{{end}}</p>
+      {{if $c.Link}}<p><a class="ext" href="{{$c.Link}}" rel="noopener" target="_blank">{{$c.LinkLbl}} ↗</a></p>{{end}}
+    </div>
+    <div class="case-vis">
+      {{if $c.Images}}
+      <div class="shots n{{len $c.Images}}">
+        {{range $c.Images}}
+        <a href="/static/img/{{.}}-full.jpg" hx-get="/gallery/{{.}}?case={{$c.ID}}" hx-target="#modal" hx-swap="innerHTML"><img loading="lazy" src="/static/img/{{.}}-full.jpg" alt=""></a>
+        {{end}}
+      </div>
+      {{end}}
+      {{if eq $c.ID "events"}}
+      <div class="vgrid">
+        {{range $.Media.Events}}{{$ev := .}}{{range $i, $v := .Videos}}
+        <a class="vcard" href="{{yt $v}}" rel="noopener" target="_blank" aria-label="{{$ev.Name}} video {{add $i 1}}">
+          <span class="vthumb"><img loading="lazy" src="{{ytimg $v}}" alt="" width="480" height="270"></span>
+        </a>
+        {{end}}{{end}}
+      </div>
+      {{end}}
+      {{if eq $c.ID "blueprint"}}
+      <figure class="dg bpx2" role="img" aria-label="Blueprint at the centre finds and wires commands, listeners, configs, services, menus and tasks">
+        <svg viewBox="0 0 640 350" aria-hidden="true">
+          <path class="base" d="M170 175 C 275 175, 285 30, 390 30"/><path class="run" pathLength="100" d="M170 175 C 275 175, 285 30, 390 30"/>
+          <path class="base" d="M170 175 C 275 175, 285 88, 390 88"/><path class="run" pathLength="100" d="M170 175 C 275 175, 285 88, 390 88"/>
+          <path class="base" d="M170 175 C 275 175, 285 146, 390 146"/><path class="run" pathLength="100" d="M170 175 C 275 175, 285 146, 390 146"/>
+          <path class="base" d="M170 175 C 275 175, 285 204, 390 204"/><path class="run" pathLength="100" d="M170 175 C 275 175, 285 204, 390 204"/>
+          <path class="base" d="M170 175 C 275 175, 285 262, 390 262"/><path class="run" pathLength="100" d="M170 175 C 275 175, 285 262, 390 262"/>
+          <path class="base" d="M170 175 C 275 175, 285 320, 390 320"/><path class="run" pathLength="100" d="M170 175 C 275 175, 285 320, 390 320"/>
+          <rect x="360" y="8" width="280" height="44" rx="10" fill="#1c1c1c"/><text class="n1" x="382" y="36">Commands</text>
+          <rect x="360" y="66" width="280" height="44" rx="10" fill="#1c1c1c"/><text class="n1" x="382" y="94">Listeners</text>
+          <rect x="360" y="124" width="280" height="44" rx="10" fill="#1c1c1c"/><text class="n1" x="382" y="152">Configs</text>
+          <rect x="360" y="182" width="280" height="44" rx="10" fill="#1c1c1c"/><text class="n1" x="382" y="210">Services</text>
+          <rect x="360" y="240" width="280" height="44" rx="10" fill="#1c1c1c"/><text class="n1" x="382" y="268">Menus</text>
+          <rect x="360" y="298" width="280" height="44" rx="10" fill="#1c1c1c"/><text class="n1" x="382" y="326">Tasks</text>
+          <rect x="0" y="105" width="200" height="140" rx="14" fill="#2f6fe4"/>
+          <text class="ct" x="24" y="165">Blueprint</text>
+          <text class="n2 on" x="24" y="193">finds and wires</text>
+          <text class="n2 on" x="24" y="213">everything</text>
+        </svg>
+      </figure>
+      {{end}}
+    </div>
+  </article>
+  {{end}}
+</section>
+
+<section id="github" class="wrap sec">
+  <header class="sec-h"><h2>On GitHub</h2><p>Most of my client work is private. Here is the public side of it.</p></header>
+  {{template "github" .GH}}
+</section>
+
+<section id="skills" class="wrap sec">
+  <header class="sec-h"><h2>Stack</h2></header>
+  <div class="skills">
+    {{range .Profile.Skills}}
+    <div class="sk-card">
+      <h3>{{.Group}}</h3>
+      <ul>
+        {{range .Items}}{{$n := .}}{{with skill $n}}<li class="has-ico {{skname $n}}">{{.}}<span>{{$n}}</span></li>{{else}}<li><span>{{$n}}</span></li>{{end}}{{end}}
+      </ul>
+    </div>
+    {{end}}
+  </div>
+</section>
+
+<section id="projects" class="wrap sec">
+  <header class="sec-h"><h2>Projects</h2><p>{{.Totals.Projects}} projects, grouped by where I built them.</p></header>
+  <div id="projects-box">
+    <div id="projects-results">{{template "projects" .View}}</div>
+  </div>
+</section>
+
+<section id="gallery" class="wrap sec">
+  <header class="sec-h"><h2>Gallery</h2><p>Screenshots from my servers and from servers I built plugins for.</p></header>
+  <div id="gallery-box">
+    {{template "gallery" .Gallery}}
+  </div>
+</section>
+
+<section id="reviews" class="wrap sec">
+  <header class="sec-h"><h2>Client reviews</h2><p>Public feedback from BuiltByBit customers.</p></header>
+  <div id="reviews-box">
+    {{template "reviews" .ReviewsView}}
+  </div>
+</section>
+
+<section id="contact" class="wrap sec contact">
+  <h2 class="mega">{{.Profile.OpenTo}}</h2>
+  <p class="lede2">Find me as <b>The_Dumbledodo</b> on Discord, in game and on GitHub.</p>
+  <ul class="contacts">
+    <li><a class="ct" href="mailto:{{.Profile.Email}}">{{icon "mail"}}<span>Email</span><em>{{.Profile.Email}}</em></a></li>
+    <li><div class="ct">{{icon "discord"}}<span>Discord</span><em>{{.Profile.Discord}}</em></div></li>
+    {{range .Profile.Links}}<li><a class="ct" href="{{.URL}}" rel="me noopener" target="_blank">{{icon (iconFor .Label)}}<span>{{.Label}}</span></a></li>{{end}}
+  </ul>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <span>© {{.Year}} {{.Profile.Name}}, aka The_Dumbledodo</span>
+</footer>
+
+<div id="modal" aria-live="polite"></div>
+</body>
+</html>{{end}}

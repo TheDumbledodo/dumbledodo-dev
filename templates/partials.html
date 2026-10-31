@@ -1,0 +1,97 @@
+{{define "projects"}}
+<div class="pg-list">
+  {{range .Groups}}
+  <details class="pgrp"{{if .Open}} open{{end}}>
+    <summary><span class="pg-title">{{.Title}}</span>{{if .Period}}<span class="pg-period">{{.Period}}</span>{{end}}<span class="pg-count">{{len .Items}}</span></summary>
+    <ul class="pcards">
+      {{range .Items}}
+      <li class="pcard" title="{{.D}}">
+        <div class="pcard-top"><strong>{{.N}}</strong>{{if ne .Role "Author"}}{{if .Role}}<em class="pi-role">{{.Role}}</em>{{end}}{{end}}</div>
+        <p class="pcard-d">{{.D}}</p>
+        {{if .Mods}}<p class="pcard-mods">{{len .Mods}} modules</p>{{end}}
+        {{if .Thumb}}<a class="pcard-btn" href="/static/img/{{.Thumb}}-full.jpg" hx-get="/gallery/{{.Thumb}}?proj={{qs .N}}" hx-target="#modal" hx-swap="innerHTML"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 9"/></svg>{{if gt .ImgN 1}}{{.ImgN}} screenshots{{else}}Screenshot{{end}}</a>{{end}}
+      </li>
+      {{end}}
+    </ul>
+  </details>
+  {{else}}
+  <p class="empty">No projects match.</p>
+  {{end}}
+</div>
+{{end}}
+
+{{define "github"}}
+<div class="gh2">
+  <div class="gh-stats">
+    <div class="tile"><b data-count>{{.User.PublicRepos}}</b><span>public repositories</span></div>
+    <div class="tile"><b data-count>{{.User.Followers}}</b><span>followers</span></div>
+    <div class="tile"><b data-count>{{.Stars}}</b><span>stars on my own repos</span></div>
+    <div class="tile"><b>{{.Since}}</b><span>on GitHub since</span></div>
+  </div>
+
+  <div class="panel heat-panel">
+    <div class="heat-scroll">
+      <div class="heat" role="img" aria-label="Daily commit activity over the last year, private repositories included">
+        <div class="heat-months">{{range .Heat.Weeks}}<span>{{.Month}}</span>{{end}}</div>
+        <div class="heat-grid">
+          {{range .Heat.Weeks}}<div class="hw">{{range .Cells}}<i class="l{{.L}}{{if .Pad}} pad{{end}}" title="{{.Date}}: {{.N}} commits"></i>{{end}}</div>{{end}}
+        </div>
+      </div>
+    </div>
+    <div class="heat-foot">
+      <a class="quiet-link" href="{{.User.HTMLURL}}" rel="me noopener" target="_blank">See everything on GitHub ↗</a>
+      <div class="legend" aria-hidden="true">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More</div>
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{define "reviews"}}
+<div class="rev-head">
+  <a class="ext" href="{{.URL}}" rel="noopener" target="_blank">Read them all on BuiltByBit ↗</a>
+</div>
+<div class="reviews">
+  {{range .Shown}}
+  <figure class="rev">
+    <blockquote>“{{.Quote}}”</blockquote>
+    {{if .Name}}<div class="rev-by">{{with avatar .UID}}<img src="{{.}}" alt="" width="40" height="40" loading="lazy">{{else}}<span class="rev-ini" aria-hidden="true">{{initials .Name}}</span>{{end}}<b>{{.Name}}</b></div>{{end}}
+    <figcaption>{{.Work}}</figcaption>
+  </figure>
+  {{end}}
+</div>
+{{if .All}}
+<button class="btn" hx-get="/reviews" hx-target="#reviews-box" hx-swap="innerHTML">Show fewer</button>
+{{else}}
+<button class="btn" hx-get="/reviews?all=1" hx-target="#reviews-box" hx-swap="innerHTML">Show all {{.TotalReviews}} reviews</button>
+{{end}}
+{{end}}
+
+{{define "gallery"}}
+<div class="gallery">
+  {{range .Items}}
+  <a class="shot" href="/static/img/{{.Slug}}-full.jpg" hx-get="/gallery/{{.Slug}}" hx-target="#modal" hx-swap="innerHTML">
+    <img loading="lazy" src="/static/img/{{.Slug}}-thumb.jpg" alt="{{.Caption}}">
+    <span class="cap"><em>{{.Group}}{{if .Date}}, {{.Date}}{{end}}</em>{{.Caption}}</span>
+  </a>
+  {{end}}
+</div>
+{{if .All}}
+<p class="more"><button class="btn" hx-get="/gallery" hx-target="#gallery-box" hx-swap="innerHTML">Show fewer</button></p>
+{{else}}
+<p class="more"><button class="btn" hx-get="/gallery?all=1" hx-target="#gallery-box" hx-swap="innerHTML">Show all {{.Total}} pictures</button></p>
+{{end}}
+{{end}}
+
+{{define "modal"}}
+<div class="overlay" data-close role="dialog" aria-modal="true" aria-label="{{.Caption}}">
+  <button class="lb-x" data-close aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <button class="lb-nav lb-prev" data-prev hx-get="{{.Prev}}" hx-target="#modal" hx-swap="innerHTML" aria-label="Previous"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-nav lb-next" data-next hx-get="{{.Next}}" hx-target="#modal" hx-swap="innerHTML" aria-label="Next"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div class="lightbox">
+    <img src="/static/img/{{.Slug}}-full.jpg" alt="{{.Caption}}">
+    <div class="lb-bar">
+      <p>{{if .Project}}<em>{{.Project}}</em>{{else}}<em>{{.Group}}{{if .Date}}, {{.Date}}{{end}}</em>{{end}} {{.Caption}} <span class="count-s">{{.Pos}} / {{.Count}}</span></p>
+    </div>
+  </div>
+</div>
+{{end}}
