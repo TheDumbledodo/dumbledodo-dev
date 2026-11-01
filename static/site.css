@@ -179,12 +179,6 @@ ul {
     margin-bottom: 18px;
 }
 
-.who {
-    color: var(--quiet);
-    font-size: 1.05rem;
-    max-width: 38ch;
-}
-
 .bento {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1608,24 +1602,12 @@ a.ct:hover {
     color: #fff;
 }
 
-.sk-card li.sk-java svg {
-    color: #f89820;
-}
-
 .sk-card li.sk-go svg {
     color: #00add8;
 }
 
-.sk-card li.sk-rust svg {
-    color: #f4693a;
-}
-
 .sk-card li.sk-typescript svg {
     color: #3178c6;
-}
-
-.sk-card li.sk-springboot svg {
-    color: #6db33f;
 }
 
 .sk-card li.sk-vue svg {

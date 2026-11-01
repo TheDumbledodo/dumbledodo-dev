@@ -39,10 +39,10 @@ type SkillGroup struct {
 }
 
 type Profile struct {
-	Name, Handle, Tagline, Email, Discord string
-	OpenTo                                string `json:"open_to"`
-	Links                                 []Link
-	Skills                                []SkillGroup
+	Name, Tagline, Email, Discord string
+	OpenTo                        string `json:"open_to"`
+	Links                         []Link
+	Skills                        []SkillGroup
 }
 
 type Group struct {
@@ -522,7 +522,7 @@ func rich(s string) template.HTML {
 
 var skillIcons = map[string]string{
 	"Java": "sk-java", "Go": "sk-go", "Rust": "sk-rust", "TypeScript": "sk-typescript",
-	"Spring Boot": "sk-springboot", "Vue": "sk-vue", "Next.js": "sk-nextjs",
+	"Spring Boot": "sk-spring", "Spring Security": "sk-spring", "Spring Data / JPA": "sk-spring", "Hibernate": "sk-hibernate", "REST APIs": "sk-api", "Vue": "sk-vue", "Next.js": "sk-nextjs",
 	"MySQL": "sk-mysql", "PostgreSQL": "sk-postgresql", "MongoDB": "sk-mongodb",
 	"Git": "sk-git", "Linux": "sk-linux", "Gradle": "sk-gradle", "Maven": "sk-maven",
 }

@@ -1,6 +1,5 @@
 {
  "name": "Sepehr Sanei",
- "handle": "Dumbledodo",
  "tagline": "Backend developer. Five years of Java, now Go and Rust.",
  "open_to": "Open to remote work worldwide.",
  "email": "sepehrsanei100@gmail.com",
@@ -42,8 +41,8 @@
   {
    "group": "Frontend",
    "items": [
-    "Vue",
-    "Next.js"
+    "Next.js",
+    "Vue"
    ]
   },
   {
