@@ -7,6 +7,8 @@ import (
 	"fmt"
 	"hash/fnv"
 	"html/template"
+	"image"
+	_ "image/jpeg"
 	"io/fs"
 	"log"
 	"net/http"
@@ -227,21 +229,70 @@ func contains(list []string, s string) bool {
 	return false
 }
 
-type GalleryView struct {
-	Items []GalleryItem
-	All   bool
-	Total int
+type GalleryCell struct {
+	GalleryItem
+	Extra bool
+	Style template.CSS
 }
 
-const galleryPreview = 14
+type GalleryView struct {
+	Cells []GalleryCell
+	Total int
+	Style template.CSS
+}
 
-func (s *Site) galleryView(all bool) GalleryView {
-	v := GalleryView{All: all, Total: len(s.Media.Gallery)}
-	for _, it := range s.Media.Gallery {
-		if all || len(v.Items) < galleryPreview {
-			v.Items = append(v.Items, it)
+const (
+	galleryCols    = 4
+	galleryPreview = 14
+	galleryGap     = 8
+)
+
+func thumbRatio(slug string) float64 {
+	f, err := assets.Open("static/img/" + slug + "-thumb.jpg")
+	if err != nil {
+		return 0.7
+	}
+	defer f.Close()
+	cfg, _, err := image.DecodeConfig(f)
+	if err != nil || cfg.Width == 0 {
+		return 0.7
+	}
+	return float64(cfg.Height) / float64(cfg.Width)
+}
+
+func galleryHeight(heights [galleryCols]float64, counts [galleryCols]int) string {
+	parts := make([]string, galleryCols)
+	for i := range parts {
+		parts[i] = fmt.Sprintf("calc(var(--w) * %.4f + %dpx)", heights[i], counts[i]*galleryGap)
+	}
+	return "max(" + strings.Join(parts, ", ") + ")"
+}
+
+func (s *Site) galleryView() GalleryView {
+	v := GalleryView{Total: len(s.Media.Gallery)}
+	var heights [galleryCols]float64
+	var counts [galleryCols]int
+	var previewH [galleryCols]float64
+	var previewN [galleryCols]int
+	for i, it := range s.Media.Gallery {
+		c := 0
+		for j := 1; j < galleryCols; j++ {
+			if heights[j] < heights[c] {
+				c = j
+			}
+		}
+		style := fmt.Sprintf("--c:%d;--y:%.4f;--n:%d", c, heights[c], counts[c])
+		v.Cells = append(v.Cells, GalleryCell{GalleryItem: it, Extra: i >= galleryPreview, Style: template.CSS(style)})
+		heights[c] += thumbRatio(it.Slug)
+		counts[c]++
+		if i == galleryPreview-1 {
+			previewH, previewN = heights, counts
 		}
 	}
+	if len(s.Media.Gallery) < galleryPreview {
+		previewH, previewN = heights, counts
+	}
+	v.Style = template.CSS("--hp:" + galleryHeight(previewH, previewN) + ";--hf:" + galleryHeight(heights, counts))
 	return v
 }
 
@@ -367,7 +418,7 @@ func (a *app) index(w http.ResponseWriter, r *http.Request) {
 		Site:        a.site,
 		View:        a.site.projectsView(),
 		ReviewsView: a.site.reviewsView(false),
-		Gallery:     a.site.galleryView(false),
+		Gallery:     a.site.galleryView(),
 		GH:          a.ghView(),
 		Year:        time.Now().Year(),
 	})
@@ -385,10 +436,6 @@ func (a *app) ghView() GHView {
 
 func (a *app) github(w http.ResponseWriter, _ *http.Request) {
 	a.render(w, "github", a.ghView())
-}
-
-func (a *app) galleryList(w http.ResponseWriter, r *http.Request) {
-	a.render(w, "gallery", a.site.galleryView(r.URL.Query().Get("all") == "1"))
 }
 
 func (a *app) gallery(w http.ResponseWriter, r *http.Request) {
@@ -492,7 +539,6 @@ func main() {
 	mux.HandleFunc("GET /healthz", func(w http.ResponseWriter, r *http.Request) { fmt.Fprint(w, "ok") })
 	mux.HandleFunc("GET /reviews", a.reviews)
 	mux.HandleFunc("GET /github", a.github)
-	mux.HandleFunc("GET /gallery", a.galleryList)
 	mux.HandleFunc("GET /gallery/{slug}", a.gallery)
 	mux.HandleFunc("GET /close", a.close)
 	mux.HandleFunc("GET /{$}", a.index)

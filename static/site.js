@@ -81,3 +81,21 @@
         cio.observe(el);
     });
 })();
+
+(function () {
+    const btn = document.querySelector('[data-gallery-toggle]');
+    const grid = document.getElementById('gallery-grid');
+    if (!btn || !grid) return;
+    btn.addEventListener('click', function () {
+        const open = grid.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.textContent = open ? btn.dataset.less : btn.dataset.more;
+        if (open) {
+            grid.querySelectorAll('.gx').forEach(function (el, i) {
+                el.style.animationDelay = Math.min(i, 14) * 45 + 'ms';
+            });
+        } else {
+            document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+})();

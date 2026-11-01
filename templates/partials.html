@@ -67,19 +67,15 @@
 {{end}}
 
 {{define "gallery"}}
-<div class="gallery">
-  {{range .Items}}
-  <a class="shot" href="/static/img/{{.Slug}}-full.jpg" hx-get="/gallery/{{.Slug}}" hx-target="#modal" hx-swap="innerHTML">
+<div class="gallery" id="gallery-grid" style="{{.Style}}">
+  {{range .Cells}}
+  <a class="shot{{if .Extra}} gx{{end}}" style="{{.Style}}" href="/static/img/{{.Slug}}-full.jpg" hx-get="/gallery/{{.Slug}}" hx-target="#modal" hx-swap="innerHTML">
     <img loading="lazy" src="/static/img/{{.Slug}}-thumb.jpg" alt="{{.Caption}}">
     <span class="cap"><em>{{.Group}}{{if .Date}}, {{.Date}}{{end}}</em>{{.Caption}}</span>
   </a>
   {{end}}
 </div>
-{{if .All}}
-<p class="more"><button class="btn" hx-get="/gallery" hx-target="#gallery-box" hx-swap="innerHTML">Show fewer</button></p>
-{{else}}
-<p class="more"><button class="btn" hx-get="/gallery?all=1" hx-target="#gallery-box" hx-swap="innerHTML">Show all {{.Total}} pictures</button></p>
-{{end}}
+<p class="more"><button class="btn" type="button" data-gallery-toggle data-more="Show all {{.Total}} pictures" data-less="Show fewer" aria-expanded="false" aria-controls="gallery-grid">Show all {{.Total}} pictures</button></p>
 {{end}}
 
 {{define "modal"}}
