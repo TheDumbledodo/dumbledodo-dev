@@ -1,7 +1,7 @@
 {{define "projects"}}
 <div class="pg-list">
   {{range .Groups}}
-  <details class="pgrp"{{if .Open}} open{{end}}>
+  <details class="pgrp">
     <summary><span class="pg-title">{{.Title}}</span>{{if .Period}}<span class="pg-period">{{.Period}}</span>{{end}}<span class="pg-count">{{len .Items}}</span></summary>
     <ul class="pcards">
       {{range .Items}}

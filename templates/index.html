@@ -23,10 +23,10 @@
 <header class="bar wrap">
   <nav aria-label="Sections">
     <a href="#work">Work</a>
+    <a href="#reviews">Reviews</a>
     <a href="#github">GitHub</a>
     <a href="#projects">Projects</a>
     <a href="#gallery">Gallery</a>
-    <a href="#reviews">Reviews</a>
   </nav>
   <a class="btn primary" href="#contact">Contact</a>
 </header>
@@ -42,6 +42,7 @@
       <li><a href="{{(index .Profile.Links 1).URL}}" rel="me noopener" target="_blank" aria-label="LinkedIn">{{icon "linkedin"}}</a></li>
       <li><a href="mailto:{{.Profile.Email}}" aria-label="Email">{{icon "mail"}}</a></li>
       <li><span class="tip" tabindex="0" aria-label="Discord: {{.Profile.Discord}}">{{icon "discord"}}<em>{{.Profile.Discord}}</em></span></li>
+      <li class="soc-contact"><a class="btn primary" href="#contact">Contact</a></li>
     </ul>
   </div>
 </section>
@@ -110,6 +111,13 @@
   {{end}}
 </section>
 
+<section id="reviews" class="wrap sec">
+  <header class="sec-h"><h2>Client reviews</h2><p>Public feedback from BuiltByBit customers.</p></header>
+  <div id="reviews-box">
+    {{template "reviews" .ReviewsView}}
+  </div>
+</section>
+
 <section id="github" class="wrap sec">
   <header class="sec-h"><h2>On GitHub</h2><p>Most of my client work is private. Here is the public side of it.</p></header>
   {{template "github" .GH}}
@@ -140,13 +148,6 @@
   <header class="sec-h"><h2>Gallery</h2><p>Screenshots from my servers and from servers I built plugins for.</p></header>
   <div id="gallery-box">
     {{template "gallery" .Gallery}}
-  </div>
-</section>
-
-<section id="reviews" class="wrap sec">
-  <header class="sec-h"><h2>Client reviews</h2><p>Public feedback from BuiltByBit customers.</p></header>
-  <div id="reviews-box">
-    {{template "reviews" .ReviewsView}}
   </div>
 </section>
 

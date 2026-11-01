@@ -655,7 +655,7 @@ input::placeholder {
         width: calc(100% - 40px);
     }
 
-    .bar nav {
+    .bar {
         display: none;
     }
 
@@ -815,6 +815,7 @@ input::placeholder {
 .soc {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 28px;
     padding: 0;
@@ -836,6 +837,23 @@ input::placeholder {
 
 .soc a {
     cursor: pointer;
+}
+
+.soc .soc-contact {
+    display: none;
+}
+
+.soc .soc-contact a {
+    width: auto;
+    height: 44px;
+    padding: 0 22px;
+    border-radius: var(--r);
+    font-size: .95rem;
+    background: var(--accent);
+}
+
+.soc .soc-contact a:hover {
+    background: #f0303c;
 }
 
 .soc a:hover, .soc .tip:hover, .soc .tip:focus-visible {
@@ -1741,5 +1759,17 @@ a.ct:hover {
         animation: none;
         stroke-dasharray: none;
         stroke: #3d5f9c;
+    }
+}
+
+@media (max-width: 720px) {
+    .soc .soc-contact {
+        display: block;
+    }
+}
+
+@media (max-width: 720px) {
+    #gallery {
+        display: none;
     }
 }

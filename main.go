@@ -187,7 +187,6 @@ func loadSite() *Site {
 type ProjectGroup struct {
 	Group
 	Items []Project
-	Open  bool
 }
 
 type ProjectsView struct {
@@ -213,7 +212,7 @@ func (s *Site) projectsView() ProjectsView {
 			return part[i].C > part[j].C
 		})
 		if len(part) > 0 {
-			v.Groups = append(v.Groups, ProjectGroup{Group: g, Items: part, Open: len(v.Groups) == 0})
+			v.Groups = append(v.Groups, ProjectGroup{Group: g, Items: part})
 		}
 	}
 	return v
